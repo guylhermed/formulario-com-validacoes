@@ -72,7 +72,7 @@ body {
   background-color: #52d27d;
 }
 
-.login-button button a {
+.login-button button {
   text-decoration: none;
   font-weight: 600;
   color: #fff;
@@ -96,6 +96,20 @@ body {
   padding: 1rem;
 }
 
+.concluido {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-inline: 170px;
+  padding-block: 150px;
+}
+
+.concluido h1 {
+  margin-bottom: 5px;
+}
+
 .input-box {
   display: flex;
   flex-direction: column;
@@ -111,8 +125,6 @@ body {
 }
 
 .input-box i {
-  /* border: 1px solid red; */
-
   position: absolute;
   margin-top: 37px;
   margin-left: 189px;
@@ -154,6 +166,10 @@ body {
   padding: 0 0.5rem;
 }
 
+.gender-inputs {
+  display: block;
+}
+
 .gender-input {
   display: flex;
   align-items: center;
@@ -183,7 +199,7 @@ body {
   background-color: #52d27d;
 }
 
-.continue-button button a {
+.continue-button button {
   text-decoration: none;
   font-size: 0.93rem;
   font-weight: 600;
@@ -216,20 +232,44 @@ body {
     padding-right: 4rem;
   }
 
-  .input-box i {
-    position: relative;
-  }
-
   .gender-inputs {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .gender-group {
+    margin-top: 0px;
     flex-direction: column;
   }
 
   .gender-input {
     margin-top: 0.5rem;
+  }
+
+  .concluido {
+    padding-inline: 0px;
+    padding-block: 150px;
+  }
+
+  .input-box {
+    margin: 5px;
+    display: flex;
+  }
+
+  .input-box input {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 2.5px;
+  }
+
+  .input-box i {
+    display: none;
+  }
+
+  .input-box small {
+    position: relative;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: auto;
   }
 }
 
@@ -250,11 +290,6 @@ body {
 .error i.fa-exclamation-circle {
   color: #e74c3c;
   visibility: visible;
-}
-
-.success small {
-  visibility: visible;
-  color: #52d27d;
 }
 
 .error small {

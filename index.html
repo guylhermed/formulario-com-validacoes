@@ -21,98 +21,96 @@
         <img src="./assets/img.svg" alt="" />
       </div>
       <div class="form">
-        <form action="#">
+        <form id="form">
           <div class="form-header">
             <div class="title">
               <h1>Cadastre-se</h1>
             </div>
             <div class="login-button">
-              <button>
-                <a href="#">Entrar</a>
-              </button>
+              <button id="refresh">Começar</button>
             </div>
           </div>
 
           <!-- ======= Inputs Groups ======= -->
-          <div class="input-group">
-            <div class="input-box error">
+          <div id="input-group" class="input-group">
+            <div class="input-box">
               <label for="firstname">Primeiro nome</label>
               <input
                 type="text"
-                id="firstname"
-                name="firstname"
+                id="username"
+                
                 placeholder="Seu primeiro nome"
-                required
+                
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box error">
+            <div class="input-box">
               <label for="lastname">Sobrenome</label>
               <input
                 type="text"
                 id="lastname"
-                name="lastname"
+               
                 placeholder="Digite seu sobrenome"
-                required
+               
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box success">
+            <div class="input-box">
               <label for="email">Email</label>
               <input
-                type="email"
+                type="text"
                 id="email"
-                name="email"
+                
                 placeholder="Digite seu email"
-                required
+                
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box error">
+            <div class="input-box">
               <label for="number">Celular</label>
               <input
                 type="tel"
                 id="number"
-                name="number"
+               
                 placeholder="(xx) xxxx-xxxx"
-                required
+                
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box success">
+            <div class="input-box">
               <label for="password">Senha</label>
               <input
                 type="password"
                 id="password"
-                name="password"
+               
                 placeholder="Digite sua senha"
-                required
+                
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
               <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box success">
+            <div class="input-box">
               <label for="confirmpassword">Confirme sua senha</label>
               <input
                 type="password"
                 id="confirmpassword"
-                name="confirmpassword"
+                
                 placeholder="Confirme sua senha"
-                required
+                
               />
               <i class="fas fa-exclamation-circle"></i>
               <i class="fas fa-check-circle"></i>
@@ -121,7 +119,7 @@
           </div>
 
           <!-- ======= Inputs Gender ======= -->
-          <div class="gender-inputs">
+          <div id="gender-inputs" class="gender-inputs">
             <div class="gender-title">
               <h6>Gênero</h6>
             </div>
@@ -149,14 +147,21 @@
             </div>
           </div>
 
+          <!-- ======= Mensagem Cadastro ======= -->
+          <div id="concluido" class="concluido">
+            <h1>Cadastro enviado!</h1>
+            <p>Obrigado por enviar seus dados!</p>
+          </div>
+
+
           <div class="continue-button">
-            <button type="submit">
-              <a href="#">Enviar</a>
-            </button>
+            <button type="submit">Enviar</button>
           </div>
         </form>
       </div>
     </div>
     <script src="https://kit.fontawesome.com/d7fc3d16e7.js" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
