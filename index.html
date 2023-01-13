@@ -35,18 +35,21 @@
 
           <!-- ======= Inputs Groups ======= -->
           <div class="input-group">
-            <div class="input-box">
+            <div class="input-box error">
               <label for="firstname">Primeiro nome</label>
               <input
                 type="text"
                 id="firstname"
                 name="firstname"
-                placeholder="Digite seu primeiro nome"
+                placeholder="Seu primeiro nome"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box">
+            <div class="input-box error">
               <label for="lastname">Sobrenome</label>
               <input
                 type="text"
@@ -55,9 +58,12 @@
                 placeholder="Digite seu sobrenome"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box">
+            <div class="input-box success">
               <label for="email">Email</label>
               <input
                 type="email"
@@ -66,9 +72,12 @@
                 placeholder="Digite seu email"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box">
+            <div class="input-box error">
               <label for="number">Celular</label>
               <input
                 type="tel"
@@ -77,9 +86,12 @@
                 placeholder="(xx) xxxx-xxxx"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box">
+            <div class="input-box success">
               <label for="password">Senha</label>
               <input
                 type="password"
@@ -88,9 +100,12 @@
                 placeholder="Digite sua senha"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
 
-            <div class="input-box">
+            <div class="input-box success">
               <label for="confirmpassword">Confirme sua senha</label>
               <input
                 type="password"
@@ -99,6 +114,9 @@
                 placeholder="Confirme sua senha"
                 required
               />
+              <i class="fas fa-exclamation-circle"></i>
+              <i class="fas fa-check-circle"></i>
+              <small>Mensagem de erro</small>
             </div>
           </div>
 
@@ -132,12 +150,13 @@
           </div>
 
           <div class="continue-button">
-            <button>
-              <a href="#">Continuar</a>
+            <button type="submit">
+              <a href="#">Enviar</a>
             </button>
           </div>
         </form>
       </div>
     </div>
+    <script src="https://kit.fontawesome.com/d7fc3d16e7.js" crossorigin="anonymous"></script>
   </body>
 </html>

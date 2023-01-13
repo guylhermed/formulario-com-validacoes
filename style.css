@@ -99,15 +99,33 @@ body {
 .input-box {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.1rem;
+  margin-bottom: 2rem;
 }
 
 .input-box input {
   margin: 0.6rem 0;
   padding: 0.8rem 1.2rem;
-  border: none;
+  border: 2px solid #f0f0f0;
   border-radius: 10px;
   box-shadow: 1px 1px 6px #0000001c;
+}
+
+.input-box i {
+  /* border: 1px solid red; */
+
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 189px;
+  visibility: hidden;
+}
+
+.input-box small {
+  position: absolute;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: 73px;
+  visibility: hidden;
 }
 
 .input-box input:hover {
@@ -198,6 +216,10 @@ body {
     padding-right: 4rem;
   }
 
+  .input-box i {
+    position: relative;
+  }
+
   .gender-inputs {
     margin-top: 2rem;
   }
@@ -209,4 +231,33 @@ body {
   .gender-input {
     margin-top: 0.5rem;
   }
+}
+
+/* Error and Success */
+.success input {
+  border-color: #52d27d;
+}
+
+.error input {
+  border-color: #e74c3c;
+}
+
+.success i.fa-check-circle {
+  color: #52d27d;
+  visibility: visible;
+}
+
+.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.success small {
+  visibility: visible;
+  color: #52d27d;
+}
+
+.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
